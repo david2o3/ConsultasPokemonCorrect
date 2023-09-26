@@ -12,7 +12,7 @@ import java.util.List;
         public static <listaPokemon> void main(String[] args) throws IOException {
             List<String> listaPokemon = new ArrayList<>();
 
-            try (BufferedReader br = new BufferedReader(new FileReader("C:\\Users\\David\\Desktop\\La asignatura jodida\\Ejercicios\\ConsultasPokemon\\data\\pokemon.json"))) {
+            try (BufferedReader br = new BufferedReader(new FileReader("Data/Pokemon.json"))) {
                 String linea;
                 while ((linea = br.readLine()) != null) {
                     listaPokemon.add(linea);
